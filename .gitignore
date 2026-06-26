@@ -1,0 +1,15 @@
+# FILE: .gitignore
+.venv/
+__pycache__/
+*.pyc
+.env
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+chroma_db/
+*.faiss
+*.bm25.pkl
+.pytest_cache/
+eval/eval_report.json
+.DS_Store
