@@ -1,0 +1,7 @@
+Ask My Docs is a retrieval-augmented generation system. It combines BM25 lexical
+search with dense vector search using reciprocal rank fusion, then reranks the
+fused candidates with a cross-encoder before generating a cited answer.
+
+Citations are enforced: every claim in the final answer must reference a
+retrieved chunk ID, and a validator checks that the cited chunk actually
+supports the claim before the answer is returned to the user.
